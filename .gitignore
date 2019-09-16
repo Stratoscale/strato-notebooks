@@ -119,3 +119,6 @@ Temporary Items
 
 *.tmp
 *.log
+
+notebooks/.ipynb_checkpoints/
+
