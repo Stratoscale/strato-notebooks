@@ -12,8 +12,8 @@ Docker on your machine to run the container below
 
 Running the server:
 
-- `docker run -p 8888:8888 -v <full path to repo>/strato-notebooks/notebooks:/root/jupyter/notebooks--name jupyter -d -i -t stratoscale/jupyter_strato:5.3.2-65b9b21d`
-- e.g. `docker run -p 8888:8888 -v /home/myname/workdir/strato-notebooks/notebooks:/root/jupyter/notebooks--name jupyter -d -i -t stratoscale/jupyter_strato:5.3.2-65b9b21d`
+- `docker run -p 8888:8888 -v <full path to repo>/strato-notebooks/notebooks:/root/jupyter/notebooks --name jupyter -d -i -t stratoscale/jupyter_strato:5.3.2-65b9b21d`
+- e.g. `docker run -p 8888:8888 -v /home/myname/workdir/strato-notebooks/notebooks:/root/jupyter/notebooks --name jupyter -d -i -t stratoscale/jupyter_strato:5.3.2-65b9b21d`
 - Open your browser to address localhost:8888
 
 You'll get to the home screen of the Jupyter server. 
