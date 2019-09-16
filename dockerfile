@@ -15,6 +15,11 @@ COPY ipython_config.py /root/.ipython/profile_default/ipython_config.py
 RUN mkdir -p /root/jupyter/notebooks
 WORKDIR /root/jupyter/
 
+# Jupyter extensions
+RUN pip install jupyter_contrib_nbextensions
+RUN jupyter contrib nbextension install --system
+RUN jupyter nbextension enable hinterland/hinterland
+
 # AWS boto3
 RUN python -m pip install boto3 --user
 
